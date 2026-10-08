@@ -1,16 +1,16 @@
 :root {
   /* Primitives */
-  --sa-navy-50: #F1F4F9;
-  --sa-navy-100: #E1E8F2;
-  --sa-navy-200: #C0CFE3;
-  --sa-navy-300: #8EA7CC;
-  --sa-navy-400: #5B7FAF;
-  --sa-navy-500: #2C5A8F;
-  --sa-navy-600: #1F4675;
-  --sa-navy-700: #183760;
-  --sa-navy-800: #13294B;
-  --sa-navy-900: #0F213D;
-  --sa-navy-950: #0B1A2E;
+  --sa-navy-50: #F4F6FE;
+  --sa-navy-100: #E5E9FA;
+  --sa-navy-200: #C8D1EF;
+  --sa-navy-300: #99AADB;
+  --sa-navy-400: #6283C7;
+  --sa-navy-500: #2763B1;
+  --sa-navy-600: #044D94;
+  --sa-navy-700: #003B74;
+  --sa-navy-800: #002B57;
+  --sa-navy-900: #001E42;
+  --sa-navy-950: #001431;
   --sa-copper-50: #FCF6EC;
   --sa-copper-100: #F7E8CF;
   --sa-copper-200: #EFD2A2;
@@ -36,26 +36,6 @@
   --sa-stone-700: #43413D;
   --sa-stone-800: #2B2A27;
   --sa-stone-900: #1B1A18;
-  /* Secondary — biome colours */
-  --sa-kalahari: #B4462B;
-  --sa-redclay: #9C3B22;
-  --sa-protea: #B83A78;
-  --sa-fynbos: #7E8F7E;
-  --sa-forest: #1E5A3F;
-  --sa-jade: #3E8A6A;
-  --sa-veld: #6F8F3A;
-  --sa-surf: #2A7F8C;
-  --sa-lithops: #7D6A8C;
-  --sa-charcoal: #2E2C2A;
-  /* Data visualisation (categorical, use in this order) */
-  --sa-chart-1: #13294B;
-  --sa-chart-2: #C17A35;
-  --sa-chart-3: #3E8A6A;
-  --sa-chart-4: #B83A78;
-  --sa-chart-5: #2A7F8C;
-  --sa-chart-6: #E3B46A;
-  --sa-chart-7: #B4462B;
-  --sa-chart-8: #7D6A8C;
   /* Semantic — light (default) */
   --color-bg: #FBF8F2;
   --color-surface: #F4EDE1;
@@ -63,75 +43,138 @@
   --color-surface-raised: #FFFFFF;
   --color-border-subtle: #E2E0DB;
   --color-border: #86827A;
-  --color-text: #0B1A2E;
+  --color-text: #001431;
   --color-text-muted: #5C5A55;
   --color-text-on-primary: #FBF8F2;
-  --color-text-on-accent: #0B1A2E;
-  --color-primary: #13294B;
-  --color-primary-hover: #183760;
-  --color-primary-subtle: #E1E8F2;
+  --color-text-on-accent: #001431;
+  --color-primary: #002B57;
+  --color-primary-hover: #003B74;
+  --color-primary-subtle: #E5E9FA;
   --color-accent: #C17A35;
   --color-accent-hover: #A6632A;
   --color-accent-text: #8A4A1E;
   --color-accent-subtle: #F7E8CF;
-  --color-link: #1F4675;
+  --color-link: #044D94;
   --color-focus-ring: #C17A35;
   --color-success: #2E6B4C;
   --color-warning: #8F5B12;
   --color-error: #A3362A;
-  --color-info: #2C5A8F;
+  --color-info: #2763B1;
+  /* Data — categorical, use in this order */
+  --data-1: #1C5790;  /* Ocean */
+  --data-2: #BA6B3A;  /* Karoo Copper */
+  --data-3: #49875C;  /* Forest Jade */
+  --data-4: #D64D96;  /* Protea */
+  --data-5: #0896A4;  /* Surf Teal */
+  --data-6: #AC8905;  /* Savanna Gold */
+  --data-7: #862C28;  /* Red Clay */
+  --data-8: #9B7DC8;  /* Lithops Mauve */
+  /* Data — sequential (low → high) */
+  --data-seq-1: #E5E9FA;
+  --data-seq-2: #C8D1EF;
+  --data-seq-3: #99AADB;
+  --data-seq-4: #6283C7;
+  --data-seq-5: #2763B1;
+  --data-seq-6: #044D94;
+  --data-seq-7: #003B74;
+  --data-seq-8: #002B57;
+  --data-seq-9: #001E42;
+  /* Data — diverging (copper ← neutral → navy) */
+  --data-div-1: #8A4A1E;
+  --data-div-2: #C17A35;
+  --data-div-3: #EFD2A2;
+  --data-div-4: #F4EDE1;
+  --data-div-5: #C8D1EF;
+  --data-div-6: #2763B1;
+  --data-div-7: #002B57;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #0B1A2E;
-    --color-surface: #0F213D;
-    --color-surface-alt: #13294B;
-    --color-surface-raised: #183760;
-    --color-border-subtle: #1F4675;
-    --color-border: #5B7FAF;
+    --color-bg: #001431;
+    --color-surface: #001E42;
+    --color-surface-alt: #002B57;
+    --color-surface-raised: #003B74;
+    --color-border-subtle: #044D94;
+    --color-border: #6283C7;
     --color-text: #F4EDE1;
-    --color-text-muted: #C0CFE3;
-    --color-text-on-primary: #0B1A2E;
-    --color-text-on-accent: #0B1A2E;
-    --color-primary: #8EA7CC;
-    --color-primary-hover: #C0CFE3;
-    --color-primary-subtle: #183760;
+    --color-text-muted: #C8D1EF;
+    --color-text-on-primary: #001431;
+    --color-text-on-accent: #001431;
+    --color-primary: #99AADB;
+    --color-primary-hover: #C8D1EF;
+    --color-primary-subtle: #003B74;
     --color-accent: #D6955A;
     --color-accent-hover: #E3B46A;
     --color-accent-text: #E3B46A;
     --color-accent-subtle: #4A2611;
-    --color-link: #8EA7CC;
+    --color-link: #99AADB;
     --color-focus-ring: #E3B46A;
     --color-success: #6FBF94;
     --color-warning: #E3B46A;
     --color-error: #E58A7A;
-    --color-info: #8EA7CC;
+    --color-info: #99AADB;
+    --data-1: #56A2F5;
+    --data-2: #F1974D;
+    --data-3: #5AB16B;
+    --data-4: #C46687;
+    --data-5: #8ECBDC;
+    --data-6: #F4CE57;
+    --data-7: #CB624B;
+    --data-8: #C7A8ED;
+    --data-seq-1: #001E42;
+    --data-seq-2: #002B57;
+    --data-seq-3: #003B74;
+    --data-seq-4: #044D94;
+    --data-seq-5: #2763B1;
+    --data-seq-6: #6283C7;
+    --data-seq-7: #99AADB;
+    --data-seq-8: #C8D1EF;
+    --data-seq-9: #E5E9FA;
+    color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --color-bg: #0B1A2E;
-  --color-surface: #0F213D;
-  --color-surface-alt: #13294B;
-  --color-surface-raised: #183760;
-  --color-border-subtle: #1F4675;
-  --color-border: #5B7FAF;
+  --color-bg: #001431;
+  --color-surface: #001E42;
+  --color-surface-alt: #002B57;
+  --color-surface-raised: #003B74;
+  --color-border-subtle: #044D94;
+  --color-border: #6283C7;
   --color-text: #F4EDE1;
-  --color-text-muted: #C0CFE3;
-  --color-text-on-primary: #0B1A2E;
-  --color-text-on-accent: #0B1A2E;
-  --color-primary: #8EA7CC;
-  --color-primary-hover: #C0CFE3;
-  --color-primary-subtle: #183760;
+  --color-text-muted: #C8D1EF;
+  --color-text-on-primary: #001431;
+  --color-text-on-accent: #001431;
+  --color-primary: #99AADB;
+  --color-primary-hover: #C8D1EF;
+  --color-primary-subtle: #003B74;
   --color-accent: #D6955A;
   --color-accent-hover: #E3B46A;
   --color-accent-text: #E3B46A;
   --color-accent-subtle: #4A2611;
-  --color-link: #8EA7CC;
+  --color-link: #99AADB;
   --color-focus-ring: #E3B46A;
   --color-success: #6FBF94;
   --color-warning: #E3B46A;
   --color-error: #E58A7A;
-  --color-info: #8EA7CC;
+  --color-info: #99AADB;
+  --data-1: #56A2F5;
+  --data-2: #F1974D;
+  --data-3: #5AB16B;
+  --data-4: #C46687;
+  --data-5: #8ECBDC;
+  --data-6: #F4CE57;
+  --data-7: #CB624B;
+  --data-8: #C7A8ED;
+  --data-seq-1: #001E42;
+  --data-seq-2: #002B57;
+  --data-seq-3: #003B74;
+  --data-seq-4: #044D94;
+  --data-seq-5: #2763B1;
+  --data-seq-6: #6283C7;
+  --data-seq-7: #99AADB;
+  --data-seq-8: #C8D1EF;
+  --data-seq-9: #E5E9FA;
+  color-scheme: dark;
 }
