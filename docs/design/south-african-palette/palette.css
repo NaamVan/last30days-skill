@@ -1,0 +1,137 @@
+:root {
+  /* Primitives */
+  --sa-navy-50: #F1F4F9;
+  --sa-navy-100: #E1E8F2;
+  --sa-navy-200: #C0CFE3;
+  --sa-navy-300: #8EA7CC;
+  --sa-navy-400: #5B7FAF;
+  --sa-navy-500: #2C5A8F;
+  --sa-navy-600: #1F4675;
+  --sa-navy-700: #183760;
+  --sa-navy-800: #13294B;
+  --sa-navy-900: #0F213D;
+  --sa-navy-950: #0B1A2E;
+  --sa-copper-50: #FCF6EC;
+  --sa-copper-100: #F7E8CF;
+  --sa-copper-200: #EFD2A2;
+  --sa-copper-300: #E3B46A;
+  --sa-copper-400: #D6955A;
+  --sa-copper-500: #C17A35;
+  --sa-copper-600: #A6632A;
+  --sa-copper-700: #8A4A1E;
+  --sa-copper-800: #6B3818;
+  --sa-copper-900: #4A2611;
+  --sa-sand-50: #FBF8F2;
+  --sa-sand-100: #F4EDE1;
+  --sa-sand-200: #EAE0CE;
+  --sa-sand-300: #DCCDB3;
+  --sa-sand-400: #C6B08E;
+  --sa-stone-50: #F7F7F5;
+  --sa-stone-100: #F0EFEC;
+  --sa-stone-200: #E2E0DB;
+  --sa-stone-300: #C9C6BE;
+  --sa-stone-400: #A9A59C;
+  --sa-stone-500: #86827A;
+  --sa-stone-600: #5C5A55;
+  --sa-stone-700: #43413D;
+  --sa-stone-800: #2B2A27;
+  --sa-stone-900: #1B1A18;
+  /* Secondary — biome colours */
+  --sa-kalahari: #B4462B;
+  --sa-redclay: #9C3B22;
+  --sa-protea: #B83A78;
+  --sa-fynbos: #7E8F7E;
+  --sa-forest: #1E5A3F;
+  --sa-jade: #3E8A6A;
+  --sa-veld: #6F8F3A;
+  --sa-surf: #2A7F8C;
+  --sa-lithops: #7D6A8C;
+  --sa-charcoal: #2E2C2A;
+  /* Data visualisation (categorical, use in this order) */
+  --sa-chart-1: #13294B;
+  --sa-chart-2: #C17A35;
+  --sa-chart-3: #3E8A6A;
+  --sa-chart-4: #B83A78;
+  --sa-chart-5: #2A7F8C;
+  --sa-chart-6: #E3B46A;
+  --sa-chart-7: #B4462B;
+  --sa-chart-8: #7D6A8C;
+  /* Semantic — light (default) */
+  --color-bg: #FBF8F2;
+  --color-surface: #F4EDE1;
+  --color-surface-alt: #F0EFEC;
+  --color-surface-raised: #FFFFFF;
+  --color-border-subtle: #E2E0DB;
+  --color-border: #86827A;
+  --color-text: #0B1A2E;
+  --color-text-muted: #5C5A55;
+  --color-text-on-primary: #FBF8F2;
+  --color-text-on-accent: #0B1A2E;
+  --color-primary: #13294B;
+  --color-primary-hover: #183760;
+  --color-primary-subtle: #E1E8F2;
+  --color-accent: #C17A35;
+  --color-accent-hover: #A6632A;
+  --color-accent-text: #8A4A1E;
+  --color-accent-subtle: #F7E8CF;
+  --color-link: #1F4675;
+  --color-focus-ring: #C17A35;
+  --color-success: #2E6B4C;
+  --color-warning: #8F5B12;
+  --color-error: #A3362A;
+  --color-info: #2C5A8F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #0B1A2E;
+    --color-surface: #0F213D;
+    --color-surface-alt: #13294B;
+    --color-surface-raised: #183760;
+    --color-border-subtle: #1F4675;
+    --color-border: #5B7FAF;
+    --color-text: #F4EDE1;
+    --color-text-muted: #C0CFE3;
+    --color-text-on-primary: #0B1A2E;
+    --color-text-on-accent: #0B1A2E;
+    --color-primary: #8EA7CC;
+    --color-primary-hover: #C0CFE3;
+    --color-primary-subtle: #183760;
+    --color-accent: #D6955A;
+    --color-accent-hover: #E3B46A;
+    --color-accent-text: #E3B46A;
+    --color-accent-subtle: #4A2611;
+    --color-link: #8EA7CC;
+    --color-focus-ring: #E3B46A;
+    --color-success: #6FBF94;
+    --color-warning: #E3B46A;
+    --color-error: #E58A7A;
+    --color-info: #8EA7CC;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0B1A2E;
+  --color-surface: #0F213D;
+  --color-surface-alt: #13294B;
+  --color-surface-raised: #183760;
+  --color-border-subtle: #1F4675;
+  --color-border: #5B7FAF;
+  --color-text: #F4EDE1;
+  --color-text-muted: #C0CFE3;
+  --color-text-on-primary: #0B1A2E;
+  --color-text-on-accent: #0B1A2E;
+  --color-primary: #8EA7CC;
+  --color-primary-hover: #C0CFE3;
+  --color-primary-subtle: #183760;
+  --color-accent: #D6955A;
+  --color-accent-hover: #E3B46A;
+  --color-accent-text: #E3B46A;
+  --color-accent-subtle: #4A2611;
+  --color-link: #8EA7CC;
+  --color-focus-ring: #E3B46A;
+  --color-success: #6FBF94;
+  --color-warning: #E3B46A;
+  --color-error: #E58A7A;
+  --color-info: #8EA7CC;
+}
