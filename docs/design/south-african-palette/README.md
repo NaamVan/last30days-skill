@@ -15,10 +15,34 @@ A colour system drawn from the nine landscapes in the reference board (Desert, N
 | **Primary: Midnight Navy** | Indian Ocean at night | `navy-800 #002B57` (brand), `navy-950 #001431` (ink, dark-mode page), `navy-500 #2763B1` (ocean) |
 | **Accent: Copper & Gold** | Nama Karoo rust, Savanna winter grass | `copper-500 #C17A35` (fills), `copper-700 #8A4A1E` (copper text), `copper-300 #E3B46A` (gold) |
 | **Background: Sand & Off-white** | Coastal dunes | `sand-50 #FBF8F2` (page), `sand-100 #F4EDE1` (cards), `#FFFFFF` (raised) |
+| **Surfaces: White, Cream & Light Grey** | Dunes, quartz, sandstone | See *Surfaces* below |
 | **Neutral: Quartz & Sandstone** | Succulent Karoo quartz, Fynbos sandstone | `stone-100 #F0EFEC` (alt surface) to `stone-600 #5C5A55` (muted text) |
 | **Data** | All biomes | Categorical, sequential and diverging sets below |
 
 The navy keeps chroma high in its dark steps (hue about 281° in CIELAB LCh, chroma 28–48 from 600 to 950), so it reads as deep ocean ink rather than a greyed slate.
+
+## Surfaces
+
+The website is light-first. These neutral grounds carry the pages; navy and copper sit on top of them.
+
+| Token | Name | Hex | Use |
+|---|---|---|---|
+| `--surface-white` | White | `#FFFFFF` | Cards, forms, modals, inputs |
+| `--surface-paper` | Paper | `#FDFBF7` | Long-read article pages |
+| `--surface-cream` | Dune Cream | `#FBF8F2` | Default page background |
+| `--surface-cream-100` | Linen | `#F7F1E4` | Alternating sections, sidebars |
+| `--surface-cream-200` | Wheat | `#F1E7D3` | Feature bands, highlighted panels |
+| `--surface-grey-50` | Quartz Mist | `#F8F8F7` | Cooler page alternative |
+| `--surface-grey-100` | Quartz | `#F2F2F0` | Table stripes, hover rows, wells |
+| `--surface-grey-200` | Sandstone | `#E8E7E3` | Dividers as fills, disabled fields |
+
+On every surface, navy body text stays above 14.8:1, muted text above 5.5:1 and input borders above 3:1.
+
+Layering: cream page, then a white card, then a Quartz well or Linen band. Use one step between neighbouring layers and mark the edge with `--color-border-subtle`. For contrast sections such as a footer or newsletter strip, use a navy band (`--color-surface-inverse`) with sand text.
+
+## Actions
+
+Buttons use **deep navy** (`--color-primary`, `#002B57`) or **copper** (`--color-accent`, `#C17A35`) only, plus an outline navy button for secondary actions. Pale blues (`navy-50` to `navy-300`) are never used for actions. They are reserved for subtle backgrounds, charts and selected states. In the optional dark mode, the primary button is `navy-500 #2763B1` with sand text.
 
 ## Data visualisation
 
@@ -58,7 +82,7 @@ Rules:
 4. **Warm neutrals.** The greys lean slightly warm (sandstone and quartz) so they sit comfortably beside sand and copper.
 5. **Accessibility first (WCAG 2.2).** All text pairs meet 4.5:1 or more. Borders, focus rings and chart marks meet 3:1. Copper `#C17A35` is not a text colour on sand (3.25:1); use `accent-text` (`copper-700`) for copper words and navy ink for labels on copper buttons.
 6. **Colour is never the only signal.** Pair status and data colours with icons, labels or markers.
-7. **A designed dark mode, not an inversion.** Dark mode uses midnight-navy surfaces, sand text, a lighter copper and gold accent, and lifted data colours, all re-checked.
+7. **Light-first, with an optional dark mode.** The site is designed on light surfaces. `palette.css` still includes a checked dark mode, and the preview page (`index.html`) is pinned to light.
 8. **Charts tested for colour blindness.** The data set's minimum separation is reported below for both themes.
 
 ## Contrast and separation results
@@ -68,9 +92,15 @@ Rules:
 | Foreground / Background | Use | Ratio | Result |
 |---|---|---|---|
 | `--color-text` / `--color-bg` | Body text | 17.31:1 | AAA |
-| `--color-text` / `--color-surface` | Body text on card | 15.77:1 | AAA |
+| `--color-text` / `--color-surface` | Body text on card | 18.35:1 | AAA |
+| `--color-text` / `--color-surface-alt` | Body text on Linen | 16.30:1 | AAA |
+| `--color-text` / `--color-surface-band` | Body text on Wheat | 14.95:1 | AAA |
+| `--color-text` / `--color-surface-muted` | Body text on Quartz | 16.37:1 | AAA |
 | `--color-text-muted` / `--color-bg` | Secondary text | 6.50:1 | AA |
-| `--color-text-muted` / `--color-surface` | Secondary text on card | 5.92:1 | AA |
+| `--color-text-muted` / `--color-surface` | Secondary text on card | 6.89:1 | AA |
+| `--color-text-muted` / `--color-surface-band` | Secondary text on Wheat | 5.61:1 | AA |
+| `--color-text-on-inverse` / `--color-surface-inverse` | Text on navy band | 12.17:1 | AAA |
+| `--color-accent` / `--color-surface-inverse` | Copper button on navy band (non-text) | 4.11:1 | AA |
 | `--color-text-on-primary` / `--color-primary` | Primary button label | 13.36:1 | AAA |
 | `--color-text-on-accent` / `--color-accent` | Accent button label | 5.33:1 | AA |
 | `--color-accent-text` / `--color-bg` | Copper text | 6.43:1 | AA |
@@ -96,9 +126,15 @@ Rules:
 |---|---|---|---|
 | `--color-text` / `--color-bg` | Body text | 15.77:1 | AAA |
 | `--color-text` / `--color-surface` | Body text on card | 14.27:1 | AAA |
+| `--color-text` / `--color-surface-alt` | Body text on Linen | 12.17:1 | AAA |
+| `--color-text` / `--color-surface-band` | Body text on Wheat | 9.61:1 | AAA |
+| `--color-text` / `--color-surface-muted` | Body text on Quartz | 12.17:1 | AAA |
 | `--color-text-muted` / `--color-bg` | Secondary text | 12.08:1 | AAA |
 | `--color-text-muted` / `--color-surface` | Secondary text on card | 10.93:1 | AAA |
-| `--color-text-on-primary` / `--color-primary` | Primary button label | 7.98:1 | AAA |
+| `--color-text-muted` / `--color-surface-band` | Secondary text on Wheat | 7.36:1 | AAA |
+| `--color-text-on-inverse` / `--color-surface-inverse` | Text on navy band | 16.95:1 | AAA |
+| `--color-accent` / `--color-surface-inverse` | Copper button on navy band (non-text) | 7.80:1 | AA |
+| `--color-text-on-primary` / `--color-primary` | Primary button label | 5.65:1 | AA |
 | `--color-text-on-accent` / `--color-accent` | Accent button label | 7.26:1 | AAA |
 | `--color-accent-text` / `--color-bg` | Copper text | 9.61:1 | AAA |
 | `--color-link` / `--color-bg` | Links | 7.98:1 | AAA |

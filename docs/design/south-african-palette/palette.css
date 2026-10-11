@@ -36,11 +36,24 @@
   --sa-stone-700: #43413D;
   --sa-stone-800: #2B2A27;
   --sa-stone-900: #1B1A18;
+  /* Surfaces — neutral whites, creams and light greys */
+  --surface-white: #FFFFFF;  /* White: Cards, forms, modals, inputs */
+  --surface-paper: #FDFBF7;  /* Paper: Long-read article pages */
+  --surface-cream: #FBF8F2;  /* Dune Cream: Default page background */
+  --surface-cream-100: #F7F1E4;  /* Linen: Alternating sections, sidebars */
+  --surface-cream-200: #F1E7D3;  /* Wheat: Feature bands, highlighted panels */
+  --surface-grey-50: #F8F8F7;  /* Quartz Mist: Cooler page alternative */
+  --surface-grey-100: #F2F2F0;  /* Quartz: Table stripes, hover rows, wells */
+  --surface-grey-200: #E8E7E3;  /* Sandstone: Dividers as fills, disabled fields */
   /* Semantic — light (default) */
   --color-bg: #FBF8F2;
-  --color-surface: #F4EDE1;
-  --color-surface-alt: #F0EFEC;
-  --color-surface-raised: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F7F1E4;
+  --color-surface-muted: #F2F2F0;
+  --color-surface-band: #F1E7D3;
+  --color-surface-inverse: #002B57;
+  --color-text-on-inverse: #F4EDE1;
+  --color-heading: #002B57;
   --color-border-subtle: #E2E0DB;
   --color-border: #86827A;
   --color-text: #001431;
@@ -94,15 +107,19 @@
     --color-bg: #001431;
     --color-surface: #001E42;
     --color-surface-alt: #002B57;
-    --color-surface-raised: #003B74;
+    --color-surface-muted: #002B57;
+    --color-surface-band: #003B74;
+    --color-surface-inverse: #000B1C;
+    --color-text-on-inverse: #F4EDE1;
+    --color-heading: #F4EDE1;
     --color-border-subtle: #044D94;
     --color-border: #6283C7;
     --color-text: #F4EDE1;
     --color-text-muted: #C8D1EF;
-    --color-text-on-primary: #001431;
+    --color-text-on-primary: #FBF8F2;
     --color-text-on-accent: #001431;
-    --color-primary: #99AADB;
-    --color-primary-hover: #C8D1EF;
+    --color-primary: #2763B1;
+    --color-primary-hover: #044D94;
     --color-primary-subtle: #003B74;
     --color-accent: #D6955A;
     --color-accent-hover: #E3B46A;
@@ -139,15 +156,19 @@
   --color-bg: #001431;
   --color-surface: #001E42;
   --color-surface-alt: #002B57;
-  --color-surface-raised: #003B74;
+  --color-surface-muted: #002B57;
+  --color-surface-band: #003B74;
+  --color-surface-inverse: #000B1C;
+  --color-text-on-inverse: #F4EDE1;
+  --color-heading: #F4EDE1;
   --color-border-subtle: #044D94;
   --color-border: #6283C7;
   --color-text: #F4EDE1;
   --color-text-muted: #C8D1EF;
-  --color-text-on-primary: #001431;
+  --color-text-on-primary: #FBF8F2;
   --color-text-on-accent: #001431;
-  --color-primary: #99AADB;
-  --color-primary-hover: #C8D1EF;
+  --color-primary: #2763B1;
+  --color-primary-hover: #044D94;
   --color-primary-subtle: #003B74;
   --color-accent: #D6955A;
   --color-accent-hover: #E3B46A;
