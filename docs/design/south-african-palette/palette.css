@@ -67,6 +67,11 @@
   --color-accent-hover: #A6632A;
   --color-accent-text: #8A4A1E;
   --color-accent-subtle: #F7E8CF;
+  --color-secondary: #43413D;
+  --color-secondary-hover: #2B2A27;
+  --color-text-on-secondary: #FFFFFF;
+  --color-accent-on-dark: #FFFFFF;
+  --color-accent-on-dark-hover: #F4EDE1;
   --color-link: #044D94;
   --color-focus-ring: #C17A35;
   --color-success: #2E6B4C;
@@ -125,6 +130,11 @@
     --color-accent-hover: #E3B46A;
     --color-accent-text: #E3B46A;
     --color-accent-subtle: #4A2611;
+    --color-secondary: #E2E0DB;
+    --color-secondary-hover: #C9C6BE;
+    --color-text-on-secondary: #001431;
+    --color-accent-on-dark: #FFFFFF;
+    --color-accent-on-dark-hover: #F4EDE1;
     --color-link: #99AADB;
     --color-focus-ring: #E3B46A;
     --color-success: #6FBF94;
@@ -174,6 +184,11 @@
   --color-accent-hover: #E3B46A;
   --color-accent-text: #E3B46A;
   --color-accent-subtle: #4A2611;
+  --color-secondary: #E2E0DB;
+  --color-secondary-hover: #C9C6BE;
+  --color-text-on-secondary: #001431;
+  --color-accent-on-dark: #FFFFFF;
+  --color-accent-on-dark-hover: #F4EDE1;
   --color-link: #99AADB;
   --color-focus-ring: #E3B46A;
   --color-success: #6FBF94;

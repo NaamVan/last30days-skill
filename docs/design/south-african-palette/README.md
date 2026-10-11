@@ -21,6 +21,17 @@ A colour system drawn from the nine landscapes in the reference board (Desert, N
 
 The navy keeps chroma high in its dark steps (hue about 281° in CIELAB LCh, chroma 28–48 from 600 to 950), so it reads as deep ocean ink rather than a greyed slate.
 
+## Colour roles
+
+| Role | Colour | Use |
+|---|---|---|
+| **Primary** | Navy `#002B57` | Main buttons, headings, links |
+| **Secondary** | Charcoal `stone-700 #43413D` | Secondary buttons, body text, icons |
+| **Accent** | Copper `#C17A35` | Calls to action and highlights on light sections |
+| **Accent on navy** | White `#FFFFFF` | Headings, icons and outline buttons on navy bands only |
+
+Grey supports navy rather than sharing the primary role, because navy carries the brand. White works as an accent only on navy: on cream it is 1.06:1, but on navy it is 14.2:1.
+
 ## Surfaces
 
 The website is light-first. These neutral grounds carry the pages; navy and copper sit on top of them.
@@ -43,6 +54,10 @@ Layering: cream page, then a white card, then a Quartz well or Linen band. Use o
 ## Actions
 
 Buttons use **deep navy** (`--color-primary`, `#002B57`) or **copper** (`--color-accent`, `#C17A35`) only, plus an outline navy button for secondary actions. Pale blues (`navy-50` to `navy-300`) are never used for actions. They are reserved for subtle backgrounds, charts and selected states. In the optional dark mode, the primary button is `navy-500 #2763B1` with sand text.
+
+Two more action styles:
+- **Charcoal secondary button:** `--color-secondary #43413D` (hover `#2B2A27`) with white text, 10.2:1. Never use light grey for a button; it reads as disabled.
+- **White on navy:** `--color-accent-on-dark #FFFFFF` for outline buttons, headings and icons on a navy band, next to a copper button.
 
 ## Data visualisation
 
@@ -104,6 +119,9 @@ Rules:
 | `--color-text-on-primary` / `--color-primary` | Primary button label | 13.36:1 | AAA |
 | `--color-text-on-accent` / `--color-accent` | Accent button label | 5.33:1 | AA |
 | `--color-accent-text` / `--color-bg` | Copper text | 6.43:1 | AA |
+| `--color-text-on-secondary` / `--color-secondary` | Charcoal secondary button label | 10.18:1 | AAA |
+| `--color-secondary` / `--color-bg` | Charcoal button vs page (non-text) | 9.61:1 | AA |
+| `--color-accent-on-dark` / `--color-surface-inverse` | White accent on navy band | 14.16:1 | AAA |
 | `--color-link` / `--color-bg` | Links | 7.94:1 | AAA |
 | `--color-border` / `--color-bg` | Input borders (non-text) | 3.61:1 | AA |
 | `--color-focus-ring` / `--color-bg` | Focus ring (non-text) | 3.25:1 | AA |
@@ -137,6 +155,9 @@ Rules:
 | `--color-text-on-primary` / `--color-primary` | Primary button label | 5.65:1 | AA |
 | `--color-text-on-accent` / `--color-accent` | Accent button label | 7.26:1 | AAA |
 | `--color-accent-text` / `--color-bg` | Copper text | 9.61:1 | AAA |
+| `--color-text-on-secondary` / `--color-secondary` | Charcoal secondary button label | 13.91:1 | AAA |
+| `--color-secondary` / `--color-bg` | Charcoal button vs page (non-text) | 13.91:1 | AA |
+| `--color-accent-on-dark` / `--color-surface-inverse` | White accent on navy band | 19.73:1 | AAA |
 | `--color-link` / `--color-bg` | Links | 7.98:1 | AAA |
 | `--color-border` / `--color-bg` | Input borders (non-text) | 4.89:1 | AA |
 | `--color-focus-ring` / `--color-bg` | Focus ring (non-text) | 9.61:1 | AA |
